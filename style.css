@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'Lack';
+    src: url(fonts/lack-regular.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.main {
+    background: #030D23;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-title {
+    margin: 0;
+    font-family: 'Lack';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.secondary-title {
+    margin: 0;
+    padding-bottom: 14px;
+    font-family: 'Lack';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.main-input {
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0 80px 0 36px;
+    width: 777px;
+    height: 100px;
+    background: #FFFFFF;
+    border-radius: 33px;
+    font-family: 'Lack';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #E0E0E0;
+    outline: none;
+}
+
+.main-button {
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    width: 777px;
+    height: 100px;
+    font-family: 'Lack';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #92FE9D 0%, #00C9FF 100%);
+    border-radius: 33px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.main-image {
+    height: 198px;
+    width: 198px;
+    margin-top: 26px;
+}
+
+.main-text {
+    font-family: 'Lack';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.main-diamond {
+    width: 58px;
+    height: 58px;
+}
+
+.main-filed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.rouble {
+    position: absolute;
+    right: 40px;
+    top: 74px;
+
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #E0E0E0;
+}
+
+.main-figure {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-with-star {
+    width: 2000px;
+    background: url('img/body.jpeg') no-repeat;
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 15px #01C9FF;
+    border-bottom: 2px solid #92FE9D;
+}
+
+.main-with-second-star {
+    width: 2000px;
+    height: 100%;
+    background: url('img/body.jpeg') no-repeat;
+    border-radius: 50% 50% 0 0/100% 100% 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 15px #01C9FF;
+    border: 2px solid #92FE9D;
+    padding-bottom: 200px;
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        box-sizing: border-box;
+        overflow: hidden;
+
+    }
+
+    .main-title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .secondary-title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .main-text {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .main-image {
+        height: 128px;
+        width: 128px;
+    }
+
+    .main-input {
+        width: 477px;
+        height: 80px;
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .main-button {
+        width: 477px;
+        height: 80px;
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .rouble {
+        right: 40px;
+        top: 64px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .main-title {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .secondary-title {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .main-text {
+        font-size: 11px;
+        line-height: 11px;
+    }
+
+    .main-image {
+        height: 128px;
+        width: 128px;
+    }
+
+    .main-input {
+        width: 377px;
+        height: 60px;
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .main-button {
+        width: 377px;
+        height: 60px;
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .rouble {
+        right: 40px;
+        top: 58px;
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .main-diamond {
+        width: 48px;
+        height: 48px;
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+    .main-title {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .secondary-title {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .main-text {
+        font-size: 11px;
+        line-height: 11px;
+    }
+
+    .main-image {
+        height: 128px;
+        width: 128px;
+    }
+
+    .main-input {
+        width: 277px;
+        height: 60px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .main-button {
+        width: 277px;
+        height: 60px;
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .rouble {
+        right: 30px;
+        top: 62px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .main-diamond {
+        width: 28px;
+        height: 28px;
+    }
+}
